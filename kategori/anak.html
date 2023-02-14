@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olshop</title>
+
+    <!-- Bootsrap -->
+    <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Boxicons -->
+    <link rel="stylesheet" href="../vendors/boxicons/css/boxicons.min.css" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../styles/style.css" />
+
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"> <i class="bx bxs-store"></i> Olshop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Kategori </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="kategori/bayi.html">Baju Bayi</a></li>
+                <li><a class="dropdown-item" href="kategori/anak.html">Baju Anak-Anak</a></li>
+                <li><a class="dropdown-item" href="kategori/Pria.html">Baju Pria</a></li>
+                <li><a class="dropdown-item" href="kategori/wanita.html">Baju Wanita</a></li>
+                <li><a class="dropdown-item" href="kategori/seragam.html">Seragam SD/SMP/SMA</a></li>
+                <li><a class="dropdown-item" href="kategori/perlengkapansekolah.html">Perlengkapan Sekolah</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#feedback">Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- AKHIR NAVBAR -->
+
+    <!-- FOOOTER -->
+    <footer class="py-3">
+      <div class="container">
+        <p class="text-white text-center fs-7 mb-0">Copyright &copy; 2023 Muhammad Irvan. All Right Reserved</p>
+      </div>
+    </footer>
+    <!-- AKHIR FOOTER -->
+    <!-- Js -->
+    <script src="../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".feedback-swiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".btn-next",
+          prevEl: ".btn-prev",
+        },
+
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
